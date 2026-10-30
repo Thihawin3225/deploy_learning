@@ -10,7 +10,7 @@ dotenv.config({
 });
 app.use(
   cors({
-    origin: "https://deploy-learning-70yjq1cb7-msq5.vercel.app/",
+    origin: "https://deploy-learning-70yjq1cb7-msq5.vercel.app",
   }),
 );
 console.log("CLIENT_URI:", process.env.CLIENT_URI);
