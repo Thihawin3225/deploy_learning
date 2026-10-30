@@ -9,6 +9,8 @@ if (import.meta.env.VITE_ENV === "development") {
 if (import.meta.env.VITE_ENV === "production") {
   VITE_API_URL = import.meta.env.VITE_API_URL;
 }
+// VITE_API_URL = "https://deploy-learning-aazv.onrender.com";
+console.log(VITE_API_URL);
 
 export const createNote = async (title: string) => {
   await fetch(`${VITE_API_URL}/create`, {
